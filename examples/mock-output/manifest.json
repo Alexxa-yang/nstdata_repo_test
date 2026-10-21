@@ -1,0 +1,20 @@
+{
+  "mode": "mock",
+  "source": "offline-fixture",
+  "total": 1,
+  "completed": 1,
+  "failed": 0,
+  "entries": [
+    {
+      "index": 1,
+      "url_without_query": "https://demo.nstdata.test/article",
+      "files": {
+        "markdown": "page-001.md",
+        "html": "page-001.html"
+      },
+      "status": "completed",
+      "title": "Demo article (mock)",
+      "status_code": 200
+    }
+  ]
+}

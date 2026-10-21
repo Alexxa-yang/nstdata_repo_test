@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nstdata-crawl-python-quickstart"
+version = "0.1.0"
+description = "Export authorized webpage content with Nstdata Crawl."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+live = ["nstdata-ai-crawl==0.1.1"]
+
+[project.scripts]
+nstdata-quickstart = "nstdata_quickstart.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

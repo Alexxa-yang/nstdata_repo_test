@@ -1,0 +1,25 @@
+Validation — 2026-10-21
+
+LIVE ACCEPTANCE
+The operator ran the installed SDK on the Nstdata scraping page. The resulting
+manifest and output files were inspected locally:
+- Markdown: HTTP 200, 9,572 bytes; expected page heading and workflow section found.
+- Markdown + HTML: completed 1/1, failed 0; Markdown 9,572 bytes and HTML 688,938 bytes.
+- Settings: ANY proxy, 30,000 ms task timeout, asynchronous submission and polling.
+- Raw Data: not accepted; the earlier three-format run reported missing output.
+  The SDK source only hydrates raw data via rawDataRef; the exact live cause is unresolved.
+
+LOCAL CHECKS
+19 offline tests pass against the installed SDK with HTTP transport mocked.
+Dependency-free operation skips the three SDK-specific tests when that optional
+package is unavailable. The mock CLI smoke and local file exports were exercised.
+Python source syntax and workflow YAML were parsed. No local Ruff run was possible.
+CI performs compilation, unit/SDK contract tests and a mock smoke run; remote GitHub
+CI has not run. Python 3.10 is configured in CI, but only 3.13 was exercised locally.
+
+PUBLICATION SCOPE
+English only, as explicitly requested by the owner. Markdown and HTML are the
+default live example outputs; Raw Data is optional and marked experimental.
+The user-designated repository name nstdata_repo_test overrides the original
+Skill's kebab-case naming convention. Tracking uses that exact repository name.
+Live output, local environments, keys and operational review files are excluded.
