@@ -159,7 +159,3 @@ These integration examples are prepared in affiliation with Nstdata.
 
 Start offline, then validate a small authorized target with
 [Nstdata](https://www.nstdata.io/?utm_source=github&utm_medium=referral&utm_campaign=nstdata_repo_test&utm_content=repository-readme).
-
-## License
-
-[MIT](LICENSE).
